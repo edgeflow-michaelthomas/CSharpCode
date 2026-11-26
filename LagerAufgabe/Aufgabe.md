@@ -23,7 +23,7 @@ void Anlegen(List<string> namensListe, List<decimal> preiseListe, List<int> best
 {
     namensListe.Add(name);
     preiseListe.Add(preis);
-    bestaende.Add(bestand);
+    bestaendeList.Add(bestand);
 }
 
 void Verkaufen(List<string> namensList, List<int> bestandsListe, string name, int anzahl)
