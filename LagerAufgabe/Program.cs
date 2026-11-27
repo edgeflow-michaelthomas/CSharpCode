@@ -1,45 +1,20 @@
-﻿var namen = new List<string>();
-var preise = new List<decimal>();
-var bestaende = new List<int>();
+﻿using LagerAufgabe;
 
-Anlegen(namen, preise, bestaende, "Schraube", 0.10m, 500);
-Anlegen(namen, preise, bestaende, "Dübel", 0.05m, 300);
-Anlegen(namen, preise, bestaende, "Hammer", 12.90m, 4);
-Verkaufen(namen, bestaende, "Hammer", 2);
+Lager lager = new Lager();
 
-bestaende[2] -= 10;
-namen.RemoveAt(0);
+var hammer = new Artikel("Hammer", 12.90m, 200);
+var zange = new Artikel("Zange", 12.50m, 50);
+var duebel = new Artikel("Dübel", 0.05m, 300);
+var schraube = new Artikel("Schraube", 0.10m, 500);
 
-Console.WriteLine($"{namen[0]}: {preise[0]} €");
-Console.WriteLine($"Bestand: {bestaende[0]}");
-Console.WriteLine(Lagerwert(preise, bestaende));
+lager.Hinzufuegen(hammer);
+lager.Hinzufuegen(zange);
+lager.Hinzufuegen(duebel);
+lager.Hinzufuegen(schraube);
 
-void Anlegen(List<string> namensListe, List<decimal> preiseListe, List<int> bestaendeList, string name, decimal preis, int bestand)
-{
-    namensListe.Add(name);
-    preiseListe.Add(preis);
-    bestaendeList.Add(bestand);
-}
+lager.Hinzufuegen(new Artikel("Hammer", 12.90m, 15));
 
-void Verkaufen(List<string> namensList, List<int> bestandsListe, string name, int anzahl)
-{
-    for (int i = 0; i < namensList.Count; i++)
-    {
-        if (namensList[i] == name)
-        {
-            bestandsListe[i] -= anzahl;
-        }
-    }
-}
-
-decimal Lagerwert(List<decimal> preisListe, List<int> bestandsListe)
-{
-    decimal summe = 0m;
-    
-    for(int i = 0; i < preisListe.Count; i++)
-    {
-        summe += preisListe[i] * bestandsListe[i];
-    }
-
-    return summe;
-}
+Console.WriteLine($"Gesamtbestand vor Verkauf: {lager.Gesamtbestand}");
+Console.WriteLine($"Lagerwert vor Verkauf: {lager.LagerWert}");
+lager.Verkaufen("Hammer", 30);
+Console.WriteLine($"Lagerwert vor Verkauf: {lager.LagerWert}");
