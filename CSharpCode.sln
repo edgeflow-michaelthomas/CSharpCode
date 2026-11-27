@@ -2,15 +2,15 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grundlagen1", "Grundlagen1\Grundlagen1.csproj", "{3D0CA2E8-6938-4CD0-B9D5-6B038B864278}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpielerAufgabe", "SpielerAufgabe\SpielerAufgabe.csproj", "{14CFF1D3-5B07-4365-A87D-868020D91E5D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G04_SpielerAufgabe", "G04_SpielerAufgabe\G04_SpielerAufgabe.csproj", "{14CFF1D3-5B07-4365-A87D-868020D91E5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RechteckAufgabe", "RechteckAufgabe\RechteckAufgabe.csproj", "{4B877318-4AB3-4C4E-A85B-728B437C7E86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G04U01_RechteckAufgabe", "G04U01_RechteckAufgabe\G04U01_RechteckAufgabe.csproj", "{4B877318-4AB3-4C4E-A85B-728B437C7E86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankkontoAufgabe", "BankkontoAufgabe\BankkontoAufgabe.csproj", "{FB1DA9A5-FF6C-404E-8912-58D1F1007D87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G04U02_BankkontoAufgabe", "G04U02_BankkontoAufgabe\G04U02_BankkontoAufgabe.csproj", "{FB1DA9A5-FF6C-404E-8912-58D1F1007D87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagerAufgabe", "LagerAufgabe\LagerAufgabe.csproj", "{A7A66CFF-CC45-49AF-9290-4535862C0FED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G04_LagerAufgabe", "G04_LagerAufgabe\G04_LagerAufgabe.csproj", "{A7A66CFF-CC45-49AF-9290-4535862C0FED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliothekAufgabe", "BibliothekAufgabe\BibliothekAufgabe.csproj", "{1AA8E7B7-E7E9-4C80-9A2A-21E76EAC1C52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G04U03_BibliothekAufgabe", "G04U03_BibliothekAufgabe\G04U03_BibliothekAufgabe.csproj", "{1AA8E7B7-E7E9-4C80-9A2A-21E76EAC1C52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
